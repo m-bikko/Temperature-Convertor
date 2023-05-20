@@ -1,0 +1,27 @@
+select {
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    width: 100px;
+}
+
+/* Стили для стрелки внутри select */
+select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+
+/* Стили для опций внутри select */
+option {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Стили при наведении на опции */
+option:hover {
+    background-color: #ccc; 
+}
